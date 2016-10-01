@@ -2,8 +2,8 @@
 FROM ubuntu:latest
 MAINTAINER Bilal Shah <bilal.shah.mail@gmail.com>
 RUN apt-get -y update && apt-get -y upgrade
-RUN apt-get install -y apt-utils
-RUN apt-get install -y iputils-ping
-RUN apt-get install -y lsb
-RUN apt-get install -y wget
-RUN apt-get install -y net-tools
+RUN apt-get -y install apt-utils
+RUN apt-get -y install iputils-ping
+RUN apt-get -y install lsb
+RUN apt-get -y install wget
+RUN apt-get -y install net-tools
