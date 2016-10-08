@@ -7,4 +7,6 @@ RUN apt-get -y update && apt-get -y upgrade && apt-get -y install \
   lsb           \
   net-tools	\
   wget \
-  curl 
+  curl \
+  vim
+RUN curl https://omnitruck.chef.io/install.sh | bash -s -- -P chefdk -v 0.16.28
