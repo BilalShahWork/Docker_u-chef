@@ -17,6 +17,7 @@ RUN apt-get -y update && apt-get -y upgrade && apt-get -y install \
 RUN curl https://omnitruck.chef.io/install.sh | bash -s -- -P chefdk -v 0.18.30
 #
 # password is chefuser
+# echo "chefuser" | openssl passwd -crypt -stdin
 #
 RUN useradd -m -G sudo -p "pa8/1qs2vUg9U" chefuser
 RUN su - chefuser && mkdir chef-repo
