@@ -38,4 +38,4 @@ USER chefuser
 RUN git config --global user.name "chefuser" && \
     git config --global user.email chefuser@example.com && \
     git config --global core.editor vi && \
-    git init /home/chefuser/chef-repo
+    git clone https://github.com/BilalShahWork/chef-repo /home/chefuser/chef-repo
